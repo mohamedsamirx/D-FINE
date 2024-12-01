@@ -60,7 +60,7 @@ def main(args, ):
         'orig_target_sizes': {0: 'N'}
     }
 
-    output_file = args.resume.replace('.pth', '.onnx') if args.resume else 'model.onnx'
+    output_file = 'model.onnx'
 
     torch.onnx.export(
         model,
